@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(90, 144, 11);
+    margin: 0;
+}
+
+header{
+    margin-top: 0;
+    background-image: url("./images/wood.jpg");
+    background-size: cover;
+    
+    
+}
+
+h1{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.using_tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: auto;
+    height: auto;
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fruit_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: auto;
+    gap: 5px;
+    border: 3px solid, black;
+    background-color: yellow;
+    box-shadow: 10px 10px;
+    
+}
