@@ -2,8 +2,6 @@ const fetchGetUrl = "http://127.0.0.1:8000/fruits";
 const fetchPostUrl = "http://127.0.0.1:8000/fruits/";
 
 
-
-
 async function fetchTestPost() {
     let name = document.getElementById('input_name').value;
     let weight = parseInt(document.getElementById('input_weight').value);
@@ -15,7 +13,7 @@ async function fetchTestPost() {
         farbe: color
     };
 
-    console.log("Neue Frucht:", data);
+    console.log("Neue Frucht:", data);  // Für Testzwecke
 
     let response = await fetch(fetchPostUrl, {
         method: 'POST',
@@ -26,10 +24,8 @@ async function fetchTestPost() {
     });
 
     let result = await response.json();
-    console.log(result);
 
-    // Aktualisiere die Liste nach dem Hinzufügen
-    fetchTestGet();
+    fetchTestGet(); //used to show 
 }
 
 async function fetchTestGet() {
